@@ -1,0 +1,82 @@
+.comment {
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.comment__wrapper {
+  flex: 1;
+}
+
+.comment__content {
+  background-color: var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.comment__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.comment__author_name,
+.comment__author_time {
+  display: block;
+  line-height: 1.6rem;
+}
+
+.comment__author_name {
+  font-size: 0.875rem;
+}
+
+.comment__author_time {
+  font-size: 0.75rem;
+  color: var(--gray-400);
+}
+
+.comment__btn_delete {
+  background-color: transparent;
+  border: 0;
+  color: var(--gray-400);
+  line-height: 0;
+  border-radius: 4px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.comment__btn_delete:hover {
+  color: var(--red-500);
+}
+
+.comment__message {
+  margin-top: 1rem;
+  color: var(--gray-300);
+}
+
+.comment__footer {
+  margin-top: 1rem;
+}
+
+.comment__btn_like {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: var(--gray-400);
+  border: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.comment__btn_like:hover {
+  color: var(--green-300);
+}
+
+.comment__btn_like svg {
+  margin-right: 0.5rem;
+}
+
+.comment__btn_like span::before {
+  content: "\2022";
+  padding: 0 0.25rem;
+}
