@@ -1,0 +1,19 @@
+.container {
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 256px 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
